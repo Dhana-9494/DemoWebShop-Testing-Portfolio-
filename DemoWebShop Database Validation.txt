@@ -1,0 +1,42 @@
+Select Email
+From customer 
+Where Email="test123@gmail.com";
+
+SELECT * 
+FROM Product 
+WHERE Name LIKE '%Laptop%';
+
+SELECT * 
+FROM ShoppingCartItem 
+WHERE Quantity = 1;
+
+Select * 
+From Orders 
+Where CustomerId = '1005';
+
+SELECT CustomerId, COUNT(*) 
+FROM Orders 
+GROUP BY CustomerId;
+
+SELECT Customer.Email, Orders.Id 
+FROM Customer 
+JOIN Orders 
+ON Customer.CustomerId = Orders.CustomerId;
+
+SELECT * 
+FROM Product 
+ORDER BY Price DESC;
+
+SELECT * 
+FROM Product 
+WHERE Price > 500;
+
+UPDATE Product 
+SET Price = 50 
+WHERE Id = 1;
+DELETE FROM Customer 
+WHERE CustomerId = '1005';
+
+SELECT * 
+FROM Product 
+WHERE ProductName LIKE 'S%';

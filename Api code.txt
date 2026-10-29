@@ -1,0 +1,22 @@
+import io.restassured.RestAssured;
+import org.testng.annotations.Test;
+import static io.restassured.RestAssured.given;
+
+public class DemoWebShopApiTest {
+
+    @Test
+    public void testDemoWebShopHomePageAPI() {
+        // 1. Set Base URI for Demo Web Shop
+        RestAssured.baseURI = "https://demowebshop.tricentis.com";
+        
+        // 2. Send GET request and validate Status Code 200
+        given()
+        .when()
+            .get("/")
+        .then()
+            .statusCode(200) // Validates that the response status code is 200 OK
+            .log().all();    // Prints the API response details in the console
+            
+        System.out.println("API Test Passed: Status Code is 200 OK!");
+    }
+}

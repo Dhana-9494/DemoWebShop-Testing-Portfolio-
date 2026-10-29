@@ -1,0 +1,160 @@
+PROJECT NAME: DEMO WEB SHOP – MANUAL TESTING
+
+WEBSITE: https://demowebshop.tricentis.com/
+
+=============================
+MODULE 1: REGISTRATION MODULE
+=============================
+
+POSITIVE TEST CASES:
+
+1. Verify registration with valid details.
+2. Verify registration with valid first name, last name, email, password and confirm password.
+3. Verify registration with valid details and gender selection.
+
+NEGATIVE TEST CASES:
+
+1. Verify registration by leaving all fields empty.
+2. Verify registration without entering First Name.
+3. Verify registration without entering Last Name.
+4. Verify registration without entering Email Address.
+5. Verify registration without entering Password.
+6. Verify registration without entering Confirm Password.
+7. Verify registration with an invalid email address.
+8. Verify registration with mismatched Password and Confirm Password.
+9. Verify registration using an already registered email address.
+
+======================
+MODULE 2: LOGIN MODULE
+======================
+
+POSITIVE TEST CASES:
+
+1. Verify login with valid email and password.
+2. Verify login using the registered email address.
+3. Verify successful login redirects the user to the appropriate page.
+
+NEGATIVE TEST CASES:
+
+1. Verify login with an invalid email address.
+2. Verify login with an incorrect password.
+3. Verify login with an unregistered email address.
+4. Verify login by leaving the email field empty.
+5. Verify login by leaving the password field empty.
+6. Verify login by leaving both fields empty.
+
+========================================
+MODULE 3: SEARCH MODULE
+=======================
+
+POSITIVE TEST CASES:
+
+1. Verify search with an existing product name.
+2. Verify search using a partial product name.
+3. Verify search with a valid keyword.
+4. Verify the correct product is displayed in search results.
+
+NEGATIVE TEST CASES:
+
+1. Verify search with a non-existing product name.
+2. Verify search using random characters.
+3. Verify search by entering a keyword that matches no products.
+4. Verify search with an empty search field.
+
+========================================
+MODULE 4: PRODUCT DETAILS MODULE
+================================
+
+POSITIVE TEST CASES:
+
+1. Verify product name is displayed correctly.
+2. Verify product price is displayed correctly.
+3. Verify product image is displayed.
+4. Verify product details page opens when clicking a product.
+5. Verify Add to Cart button is available for a product.
+
+NEGATIVE TEST CASES:
+
+1. Verify product details for a non-existing product.
+2. Verify appropriate behaviour when required product information is unavailable.
+
+========================================
+MODULE 5: SHOPPING CART MODULE
+==============================
+
+POSITIVE TEST CASES:
+
+1. Verify a product can be added to the shopping cart.
+2. Verify the selected product name is displayed in the cart.
+3. Verify the correct product price is displayed.
+4. Verify the product quantity is displayed correctly.
+5. Verify quantity can be increased.
+6. Verify the cart total updates after changing quantity.
+7. Verify a product can be removed from the cart.
+8. Verify the cart becomes empty after removing all products.
+
+NEGATIVE TEST CASES:
+
+1. Verify the behaviour when the cart is empty.
+2. Verify the behaviour when quantity is entered as zero.
+3. Verify the behaviour when quantity is entered as a negative number.
+4. Verify the behaviour when an invalid quantity is entered.
+
+========================================
+MODULE 6: CHECKOUT MODULE
+=========================
+
+POSITIVE TEST CASES:
+
+1. Verify checkout with a product in the shopping cart.
+2. Verify billing address details can be entered.
+3. Verify a shipping method can be selected.
+4. Verify a payment method can be selected.
+5. Verify the order total is calculated correctly.
+6. Verify checkout can be completed with valid details.
+7. Verify the order confirmation message is displayed after successful checkout.
+
+NEGATIVE TEST CASES:
+
+1. Verify checkout when the shopping cart is empty.
+2. Verify checkout without providing required billing information.
+3. Verify checkout without selecting a required shipping method, if applicable.
+4. Verify checkout without selecting a required payment method, if applicable.
+5. Verify checkout behaviour when required information is missing.
+
+========================================
+MODULE 7: ORDER HISTORY MODULE
+==============================
+
+POSITIVE TEST CASES:
+
+1. Verify a successfully placed order appears in Order History.
+2. Verify the order number is displayed.
+3. Verify the order status is displayed.
+4. Verify order details show the correct product and quantity.
+5. Verify order total is displayed correctly.
+
+NEGATIVE TEST CASES:
+
+1. Verify Order History when the user has no orders.
+2. Verify the behaviour when accessing an invalid order details page.
+3. Verify a user cannot access another user's order details, where applicable.
+
+=======================
+MODULE 8: LOGOUT MODULE
+=======================
+
+POSITIVE TEST CASES:
+
+1. Verify the user can log out successfully.
+2. Verify the Log Out option is available when the user is logged in.
+3. Verify the Register/Login options appear after logout, as applicable.
+
+NEGATIVE TEST CASES:
+
+1. Verify protected account pages cannot be accessed after logout, where applicable.
+2. Verify the behaviour when the user attempts to access an account page after logout.
+
+=====================
+END OF TEST SCENARIOS
+=====================
